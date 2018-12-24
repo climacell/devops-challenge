@@ -72,6 +72,14 @@ The users service works with a mongo DB to store it's users.
             ```
 
 # The Exercise
-Your goal is simple - build a full pipeline
+Your goal is simple - build a full pipeline.
+Any change in the repository, that is pushed, is automatically build, published, deployed and available to use.
 
-# bonus
+**Notices:**
+* Must use GCP
+* Must deploy as docker image over GKE (Google Kubernetes)
+* Use whatever CI\CD tool you want
+* Work on local github repository
+
+# Bonus
+If time permits, 
