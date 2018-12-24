@@ -80,6 +80,7 @@ Any change in the repository, that is pushed, is automatically build, published,
 * Must deploy as docker image over GKE (Google Kubernetes)
 * Use whatever CI\CD tool you want
 * Work on local github repository
+* Consider using managed services. For mongo you may use mongo atlas - https://www.mongodb.com/cloud/atlas
 
 # Bonus
 If time permits, add continouos monitoring to the service, that shows the current status, and sends alerts when the service is not functioning.
