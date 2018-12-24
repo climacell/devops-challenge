@@ -72,6 +72,6 @@ The users service works with a mongo DB to store it's users.
             ```
 
 # The Exercise
-Your goal
+Your goal is simple - build a full pipeline
 
 # bonus
