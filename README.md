@@ -9,8 +9,8 @@ Below are the instructions of how to build, run and use this service.
 
 ## Prerequisites
 ### Mongo DB
-The users service works with a mongo DB to store it's users.
-**Database name**: devops-exercise
+The users service works with a mongo DB to store it's users.<BR>
+**Database name**: devops-exercise<BR>
 **Collection name**: users
 
 ## Build
