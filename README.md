@@ -74,20 +74,26 @@ The users service works with a mongo DB to store it's users.<BR>
             ```
 
 ## The Exercise
-Your goal is simple - build a full pipeline.
+
+Your goal is simple - build a full build and deploy pipeline.
+
 Any change in the repository, that is pushed, is automatically build, published, deployed and available to use.
 
 **Notices:**
+
 * Must use GCP
-* Must deploy as docker image over GKE (Google Kubernetes)
-* Use whatever CI\CD tool you want
+* Must deploy as docker image over GKE (Google Kubernetes Engine)
+* Use whichever CI/CD tool you want
 * Work on local github repository
 * Consider using managed services. For mongo you may use mongo atlas - https://www.mongodb.com/cloud/atlas
 
 ## Bonus
-If time permits, add continouos monitoring to the service, that shows the current status, and sends alerts when the service is not functioning.
-Use also the "/health" endpoint, in addition to other metrics, and logs.
-**Notice**: For the sake of the exercise, /health randomally returns that the health is false.
-**Notice**: Current service logs all the requests to the console.
+
+If time permits, add continuous monitoring to the service, that shows the current status, and sends alerts when the service is not functioning.
+Use also the `/health` endpoint, in addition to other metrics, and logs.
+
+**Notice**: For the sake of the exercise, `/health` endpoint randomly returns that the health is false.
+**Notice**: The service logs all requests to the console.
 
 **GOOD LUCK!**
+**The ClimaCell team**
