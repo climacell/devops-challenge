@@ -3,26 +3,28 @@ Welcome to ClimaCell!
 We are excited to move forward and give you the homework assignment.  
 The purpose of this assignment is twofold: not only will it help us assess your skill-set, but it will also help you understand the type of challenges we currently work on and ask yourself if these challenges are of the kind you would be interested in.
 
-# The Users Service
-This github repository is a demo app of a very small "users" service.
+## The Users Service
+
+This github repository is a `node.js` demo app of a very small "users" service.
 Below are the instructions of how to build, run and use this service.
 
-## Prerequisites
-### Mongo DB
+### Prerequisites
+
+#### Mongo DB
 The users service works with a mongo DB to store it's users.<BR>
 **Database name**: devops-exercise<BR>
 **Collection name**: users
 
-## Build
+### Build
 `npm install`
 
-## Environment Variable
+#### Environment Variable
 * MONGO_URI - uri of the mongo DB
 
-## Run
+### Run
 `npm run start`
 
-# Use
+### Use
 * http://localhost:3000/users
     * GET - lists the list of existing users
         * Response:
@@ -71,7 +73,7 @@ The users service works with a mongo DB to store it's users.<BR>
             }
             ```
 
-# The Exercise
+## The Exercise
 Your goal is simple - build a full pipeline.
 Any change in the repository, that is pushed, is automatically build, published, deployed and available to use.
 
@@ -82,7 +84,7 @@ Any change in the repository, that is pushed, is automatically build, published,
 * Work on local github repository
 * Consider using managed services. For mongo you may use mongo atlas - https://www.mongodb.com/cloud/atlas
 
-# Bonus
+## Bonus
 If time permits, add continouos monitoring to the service, that shows the current status, and sends alerts when the service is not functioning.
 Use also the "/health" endpoint, in addition to other metrics, and logs.
 **Notice**: For the sake of the exercise, /health randomally returns that the health is false.
