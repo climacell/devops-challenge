@@ -1,3 +1,6 @@
+![ClimaCell](https://www.climacell.co/wp-content/uploads/2018/07/CC-logo-base-black-w_blue-icon-300.png "ClimaCell")
+
+
 # DevOps Exercise
 Welcome to ClimaCell!
 We are excited to move forward and give you the homework assignment.  
