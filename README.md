@@ -96,4 +96,5 @@ Use also the `/health` endpoint, in addition to other metrics, and logs.
 **Notice**: The service logs all requests to the console.
 
 **GOOD LUCK!**
+
 **The ClimaCell team**
