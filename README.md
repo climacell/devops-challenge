@@ -1,6 +1,5 @@
 ![ClimaCell](https://www.climacell.co/wp-content/uploads/2018/07/CC-logo-base-black-w_blue-icon-300.png "ClimaCell")
 
-
 # DevOps Exercise
 Welcome to ClimaCell!
 We are excited to move forward and give you the homework assignment.  
@@ -19,15 +18,19 @@ The users service works with a mongo DB to store it's users.<BR>
 **Collection name**: users
 
 ### Build
-`npm install`
 
-#### Environment Variable
+   `npm install`
+
+#### Environment Variables
+
 * MONGO_URI - uri of the mongo DB
 
 ### Run
-`npm run start`
+   
+   `npm run start`
 
 ### Use
+
 * http://localhost:3000/users
     * GET - lists the list of existing users
         * Response:
@@ -78,26 +81,41 @@ The users service works with a mongo DB to store it's users.<BR>
 
 ## The Exercise
 
-Your goal is simple - build a full build and deploy pipeline.
+Your goal is simple - build a full build and deploy pipeline. 
 
-Any change in the repository, that is pushed, is automatically build, published, deployed and available to use.
+We can look at the pipline as consisting of three stages:
 
-**Notices:**
+* Continuous Integration
+* Continuous Deployment
+* Continuous Monitoring
 
-* Must use GCP
-* Must deploy as docker image over GKE (Google Kubernetes Engine)
-* Use whichever CI/CD tool you want
-* Work on local github repository
-* Consider using managed services. For mongo you may use mongo atlas - https://www.mongodb.com/cloud/atlas
+### CI
 
-## Bonus
+Any change in the repository, that is pushed, is automatically built as a docker container and published to a docker registry.
+
+### CD
+
+Latest docker image deployed to a container platform and available to use.
+
+### CM - Bonus!
 
 If time permits, add continuous monitoring to the service, that shows the current status, and sends alerts when the service is not functioning.
 Use also the `/health` endpoint, in addition to other metrics, and logs.
 
-**Notice**: For the sake of the exercise, `/health` endpoint randomly returns that the health is false.
-**Notice**: The service logs all requests to the console.
+## Remarks
+
+### Thecnologies
+
+* Use whichever CI/CD tool you want.
+* Use GCR (Google Container Registry) as the docker registry and GKE (Google Kubernetes Engine) as the docker platform.
+* Work on local github repository.
+* Consider using managed services. For mongo you may use mongo atlas - https://www.mongodb.com/cloud/atlas.
+
+### Notices
+
+* For the sake of the exercise, `/health` endpoint randomly returns that the health is false.
+* For simplicity, the service logs all the requests to the console.
 
 **GOOD LUCK!**
 
-**The ClimaCell team**
+**The ClimaCell Team**
