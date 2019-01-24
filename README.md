@@ -81,7 +81,7 @@ The users service works with a mongo DB to store it's users.<BR>
 
 ## The Exercise
 
-Your goal is simple - build a full build and deploy pipeline. 
+Your goal is simple - build a full build, deploy and monitor pipeline. 
 
 We can look at the pipline as consisting of three stages:
 
@@ -97,10 +97,25 @@ Any change in the repository, that is pushed, is automatically built as a docker
 
 Latest docker image deployed to a container platform and available to use.
 
-### CM - Bonus!
+### CM
 
-If time permits, add continuous monitoring to the service, that shows the current status, and sends alerts when the service is not functioning.
+Add continuous monitoring to the service, that shows the current status, and sends alerts when the service is not functioning.
 Use also the `/health` endpoint, in addition to other metrics, and logs.
+
+## What Should You Do?
+The exercise is focused on the `CI`. Please create a full CI process as defined above.
+
+**Notice:** The outcome of the exercise must include:
+* Configuration \ script files (as part of the repository) - MUST
+
+and should include some of the following:
+* CI tool that we can access and see the pipeline
+* Access (or snapshot) to the docker registry that is updated per each commit
+* Permissions to the repository, where we can commit changes, and see that the pipeline was triggered and new docker was uploaded to the registry
+* url\ip of the deployed service - so we can check it over http
+
+If time permits:
+Continue to CD as defined above.
 
 ## Remarks
 
