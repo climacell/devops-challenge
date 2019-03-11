@@ -114,8 +114,6 @@ and should include some of the following:
 * Permissions to the repository, where we can commit changes, and see that the pipeline was triggered and new docker was uploaded to the registry
 * url\ip of the deployed service - so we can check it over http
 
-**Note:** Make sure the solution is not opened to the public, but only to you and us.
-
 If time permits:
 Continue to CD as defined above.
 
@@ -126,6 +124,7 @@ Continue to CD as defined above.
 * Use whichever CI/CD tool you want.
 * Use GCR (Google Container Registry) as the docker registry and GKE (Google Kubernetes Engine) as the docker platform.
 * Work on local github repository.
+** **Note:** Make sure the solution is not opened to the public, but only to you and us.
 * Consider using managed services. For mongo you may use mongo atlas - https://www.mongodb.com/cloud/atlas.
 
 ### Notices
