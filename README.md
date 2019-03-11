@@ -124,7 +124,7 @@ Continue to CD as defined above.
 * Use whichever CI/CD tool you want.
 * Use GCR (Google Container Registry) as the docker registry and GKE (Google Kubernetes Engine) as the docker platform.
 * Work on local github repository.
-** **Note:** Make sure the solution is not opened to the public, but only to you and us.
+* * **Note:** Make sure the solution is not opened to the public, but only to you and us.
 * Consider using managed services. For mongo you may use mongo atlas - https://www.mongodb.com/cloud/atlas.
 
 ### Notices
