@@ -1,4 +1,4 @@
-![ClimaCell](https://www.climacell.co/wp-content/uploads/2018/07/CC-logo-base-black-w_blue-icon-300.png "ClimaCell")
+![ClimaCell](https://en.wikipedia.org/wiki/ClimaCell#/media/File:ClimaCell_Logo.png "ClimaCell")
 
 # DevOps Exercise
 Welcome to ClimaCell!
