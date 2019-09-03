@@ -119,7 +119,7 @@ Continue to CD as defined above.
 
 ## Remarks
 
-### Thecnologies
+### Technologies
 
 * Use whichever CI/CD tool you want.
 * Use GCR (Google Container Registry) as the docker registry and GKE (Google Kubernetes Engine) as the docker platform.
