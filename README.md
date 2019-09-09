@@ -2,7 +2,9 @@
 
 # DevOps Exercise
 Welcome to ClimaCell!
-We are excited to move forward and give you the homework assignment.  
+
+If you have not already applied, but are interested in joining our team, please see our current job openings here:https://www.climacell.co/careers/
+
 The purpose of this assignment is twofold: not only will it help us assess your skill-set, but it will also help you understand the type of challenges we currently work on and ask yourself if these challenges are of the kind you would be interested in.
 
 ## The Users Service
