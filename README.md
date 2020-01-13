@@ -2,7 +2,7 @@
 
 # Taking a Service to Production
 
-This challenge goal is simple - build a full build, deploy and monitor pipeline for a service.  It will allow you understand the challenges we face everyday, and to demonstrate your skills.
+This devops challenge's goal is simple - build a full integration, deployment and monitoring pipeline for a service. It will allow you understand the challenges we face in ClimaCell everyday, and to demonstrate your skills.
 
 We look at the pipline as consisting of three stages:
 
