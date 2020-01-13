@@ -1,37 +1,43 @@
 ![ClimaCell](https://climacell.ussl.co/wp-content/uploads/2019/03/CC-logo-base-black-w_blue-icon-300.png "ClimaCell")
 
-# DevOps Exercise
-Welcome to ClimaCell!
+# DevOps Challenge
 
-If you have not already applied, but are interested in joining our team, please see our current job openings here: https://www.climacell.co/careers/
+## Taking a Service to Production
 
-The purpose of this assignment is twofold: not only will it help us assess your skill-set, but it will also help you understand the type of challenges we currently work on and ask yourself if these challenges are of the kind you would be interested in.
+This challenge goal is simple - build a full build, deploy and monitor pipeline for a service.  It will allow you understand the challenges we face everyday, and to demonstrate your skills.
 
-## The Users Service
+We look at the pipline as consisting of three stages:
 
-This github repository is a `node.js` demo app of a very small "users" service.
-Below are the instructions of how to build, run and use this service.
+1. **Continuous Integration** - Any change in the repository that is pushed is automatically built as a docker container and published to a docker registry.
+2. **Continuous Deployment** - Latest docker image deployed to a container platform and available to use.
+3. **Continuous Monitoring** - The service health status is always available, and alert is sent when the service is not functioning. Logs are delivered and available. 
+
+### Required solution:
+
+The exercise is focused on the `CI` stage.
+
+* Create a full _Continuous Integration_ process as defined above. 
+* The outcome should include:
+   * Configuration / script files as part of the repository.
+   * Permissions to the repository, where we can commit changes, and see that the pipeline was triggered and new docker was uploaded to the registry.
+   * URL/IP of the deployed service - so we can check it over http.
+   * Access to CI tool that we can access and see the pipeline in (*OPTIONAL*).
+* * *__Bonus:__* Continue to _Continuous Deployment_ and _Continuous Monitoring_ process as defined above (Use the `/health` endpoint in addition to logs).
 
 ### Prerequisites
 
-#### Mongo DB
-The users service works with a mongo DB to store its users.<BR>
-**Database name**: devops-exercise<BR>
-**Collection name**: users
+This github repository is a `NodeJS` demo app of a very small users service.
+Below are the instructions of how to build, run and use this service.
 
-### Build
+#### Build
 
    `npm install`
 
-#### Environment Variables
-
-* MONGO_URI - uri of the mongo DB
-
-### Run
+#### Run
    
    `npm run start`
 
-### Use
+#### Use
 
 * http://localhost:3000/users
     * GET - lists the list of existing users
@@ -65,7 +71,7 @@ The users service works with a mongo DB to store its users.<BR>
             "_id": "5c20dc96e4f6066bc12ab11e"
         }
         ```
-* http://localhost:3000/health - endpoint to report the service health
+* http://localhost:3000/health
     * GET - report on health of the service
         * Response:
             * In case all OK:
@@ -80,60 +86,31 @@ The users service works with a mongo DB to store its users.<BR>
                 "status": "DB Down"
             }
             ```
+#### Config
 
-## The Exercise
+The users service works with a `MongoDB` to store its users.
 
-Your goal is simple - build a full build, deploy and monitor pipeline. 
+   `Database name: devops-exercise`
 
-We can look at the pipline as consisting of three stages:
+   `Collection name: users`
 
-* Continuous Integration
-* Continuous Deployment
-* Continuous Monitoring
+#### Environment Variables
 
-### CI
+   `MONGO_URI - uri of the mongo DB`
 
-Any change in the repository, that is pushed, is automatically built as a docker container and published to a docker registry.
-
-### CD
-
-Latest docker image deployed to a container platform and available to use.
-
-### CM
-
-Add continuous monitoring to the service, that shows the current status, and sends alerts when the service is not functioning.
-Use also the `/health` endpoint, in addition to other metrics, and logs.
-
-## What Should You Do?
-The exercise is focused on the `CI`. Please create a full CI process as defined above.
-
-**Notice:** The outcome of the exercise must include:
-* Configuration \ script files (as part of the repository) - MUST
-
-and should include some of the following:
-* CI tool that we can access and see the pipeline
-* Access (or snapshot) to the docker registry that is updated per each commit
-* Permissions to the repository, where we can commit changes, and see that the pipeline was triggered and new docker was uploaded to the registry
-* url\ip of the deployed service - so we can check it over http
-
-If time permits:
-Continue to CD as defined above.
-
-## Remarks
-
-### Technologies
+### Guidelines:
 
 * Use whichever CI/CD tool you want.
-* Use GCR (Google Container Registry) as the docker registry and GKE (Google Kubernetes Engine) as the docker platform.
+* Use `GCR` (Google Container Registry) as the docker registry and `GKE` (Google Kubernetes Engine) as the docker platform.
 * Work on local github repository.
-* * **Note:** Make sure the solution is not opened to the public, but only to you and us.
-* Consider using managed services. For mongo you may use mongo atlas - https://www.mongodb.com/cloud/atlas.
-
-### Notices
-
+* Make sure the solution is *__private__*, not public. Only available for you and us.
+* Consider using managed services. For mongo you may use `Atlas` - https://www.mongodb.com/cloud/atlas.
 * For the sake of the exercise, `/health` endpoint randomly returns that the health is false.
 * For simplicity, the service logs all the requests to the console.
 
-**GOOD LUCK!**
+Don't hesitate to contact us with any question.
+
+**Good Luck!**
 
 **The ClimaCell Team**
+
