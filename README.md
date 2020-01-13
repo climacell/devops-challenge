@@ -1,8 +1,6 @@
 ![ClimaCell](https://climacell.ussl.co/wp-content/uploads/2019/03/CC-logo-base-black-w_blue-icon-300.png "ClimaCell")
 
-# DevOps Challenge
-
-## Taking a Service to Production
+# Taking a Service to Production
 
 This challenge goal is simple - build a full build, deploy and monitor pipeline for a service.  It will allow you understand the challenges we face everyday, and to demonstrate your skills.
 
@@ -12,7 +10,7 @@ We look at the pipline as consisting of three stages:
 2. **Continuous Deployment** - Latest docker image deployed to a container platform and available to use.
 3. **Continuous Monitoring** - The service health status is always available, and alert is sent when the service is not functioning. Logs are delivered and available. 
 
-### Required solution:
+## Required solution:
 
 The exercise is focused on the `CI` stage.
 
@@ -24,20 +22,20 @@ The exercise is focused on the `CI` stage.
    * Access to CI tool that we can access and see the pipeline in (*OPTIONAL*).
 * * *__Bonus:__* Continue to _Continuous Deployment_ and _Continuous Monitoring_ process as defined above (Use the `/health` endpoint in addition to logs).
 
-### Prerequisites
+## Prerequisites
 
 This github repository is a `NodeJS` demo app of a very small users service.
 Below are the instructions of how to build, run and use this service.
 
-#### Build
+### Build
 
    `npm install`
 
-#### Run
+### Run
    
    `npm run start`
 
-#### Use
+### Use
 
 * http://localhost:3000/users
     * GET - lists the list of existing users
@@ -86,7 +84,7 @@ Below are the instructions of how to build, run and use this service.
                 "status": "DB Down"
             }
             ```
-#### Config
+### Config
 
 The users service works with a `MongoDB` to store its users.
 
@@ -94,11 +92,11 @@ The users service works with a `MongoDB` to store its users.
 
    `Collection name: users`
 
-#### Environment Variables
+### Environment Variables
 
    `MONGO_URI - uri of the mongo DB`
 
-### Guidelines:
+## Guidelines:
 
 * Use whichever CI/CD tool you want.
 * Use `GCR` (Google Container Registry) as the docker registry and `GKE` (Google Kubernetes Engine) as the docker platform.
