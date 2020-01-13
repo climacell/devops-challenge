@@ -84,6 +84,8 @@ Below are the instructions of how to build, run and use this service.
                 "status": "DB Down"
             }
             ```
+
+
 ### Config
 
 The users service works with a `MongoDB` to store its users.
