@@ -12,15 +12,16 @@ We look at the pipline as consisting of three stages:
 
 ## Required solution:
 
-The exercise is focused on the `CI` stage.
+The exercise is focused on the `CI` and `CD` stages.
 
-* Create a full _Continuous Integration_ process as defined above. 
+* Create a full _Continuous Integration_ and _Continuous Deployment_ processes as defined above. 
 * The outcome should include:
    * Configuration / script files as part of the repository.
    * Permissions to the repository, where we can commit changes, and see that the pipeline was triggered and new docker was uploaded to the registry.
    * URL/IP of the deployed service - so we can check it over http.
    * Access to CI tool that we can access and see the pipeline in (*OPTIONAL*).
-* * *__Bonus:__* Continue to _Continuous Deployment_ and _Continuous Monitoring_ process as defined above (Use the `/health` endpoint in addition to logs).
+   * Access to the deployment environment where we can see the deployed artifact (*OPTIONAL*). 
+* * *__Bonus:__* Continue to _Continuous Monitoring_ process as defined above (Use the `/health` endpoint in addition to logs).
 
 ## Prerequisites
 
@@ -106,6 +107,8 @@ The users service works with a `MongoDB` to store its users.
    `MONGO_URI - uri of the mongo DB`
 
 ## Guidelines:
+
+* Although this "users service" is very small and focused, we should be prepared for multi-environments (dev, staging, production, etc...) with full pipeline (including testing, linting, and more...) in the future. Make sure your solution is opened for such future changes.
 
 * Use whichever CI/CD tool you want.
 * Use `GCR` (Google Container Registry) as the docker registry and `GKE` (Google Kubernetes Engine) as the docker platform.
